@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+    <html>
+        <head>
+            
+
+
+            <title> SUPER AWESOME WEBSITE </title>
+            <link  href = "project1.css" type="text/css" rel ="stylesheet">
+            
+          
+        
+        </head>
+        <body>
+          <h1>Outfit Selector</h1>
+            <h2>Use the arrows to select items for your outfit!</h2>
+
+
+        <div class="slideshow-container">
+          <img class="mySlides" src="photo.jpg" style="height:600px;">
+          <img class="mySlides" src="photo2.jpg" style= "height:600px">
+
+
+                <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+                <a class="next" onclick="plusDivs(1)">&#10095;</a>
+           
+
+        </div>
+        
+
+        
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+
+                
+        
+        
+        
+        
+        </body>
+
+
+
+    </html>
