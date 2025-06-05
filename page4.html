@@ -1,0 +1,48 @@
+<!DOCTYPE HTMl>
+<head>
+
+<title> SUPER AWESOME WEBSITE </title>
+            <link  href = "project1.css" type="text/css" rel ="stylesheet">
+
+
+
+</head>
+
+
+
+<body>
+
+ <div class="slideshow-container">
+          <img class="mySlides2" src="photo3.jpg" style="height:400px;">
+          <img class="mySlides2" src="photo4.jpg" style= "height:400px">
+
+            <p>
+                shoes
+            </p>
+                <a class="prev2" onclick="plusDivs2(-1)">&#10094;</a>
+                <a class="next2" onclick="plusDivs2(1)">&#10095;</a>
+           
+
+        </div>
+
+
+<script>
+            var slideIndex = 1;
+            showDivs2(slideIndex);
+
+            function plusDivs2(n) {
+              showDivs2(slideIndex += n);
+            }
+
+            function showDivs2(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides2");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+</body>
