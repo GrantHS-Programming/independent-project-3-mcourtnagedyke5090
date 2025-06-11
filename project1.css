@@ -26,17 +26,18 @@ p{
     text-align: center;
     font-size: 20px;
  color: darkred;
+
 }
 p1{
     font-family: fantasy;
     text-align: left;
     font-size: 20px;
-    margin-left: 20px;
+    margin: 20px;
    color: darkred;
 }
 * {box-sizing: border-box}
 body {font-family: Verdana, fantasy; margin:0}
-.mySlides, .mySlides1, .mySlides2 {display: none; border: solid; border-color: darkslateblue}
+.mySlides, .mySlides1, .mySlides2 {display: none; border: solid; border-color: darkslateblue;}
 .mySlides:hover, .mySlides1:hover, .mySlides2:hover
 { border-color: darkred;}
 img {vertical-align: middle;
@@ -44,7 +45,10 @@ margin-left: auto;
 margin-right: auto;
 margin-bottom: 30px;
 }
-
+!.all{
+    display: flex;
+}
+   
 .slideshow-container{
     max-width: 1000px;
     position: relative;

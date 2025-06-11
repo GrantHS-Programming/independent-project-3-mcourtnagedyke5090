@@ -20,7 +20,7 @@ p{
 }
 * {box-sizing: border-box}
 body {font-family: Verdana, fantasy; margin:0}
-.mySlides {display: none; border: solid; border-color: darkslateblue; margin-top: 300px; }
+.mySlides2 {display: none; border: solid; border-color: darkslateblue; margin-top: 250px; }
 .mySlides:hover
 { border-color: darkred;}
 img {vertical-align: middle;
